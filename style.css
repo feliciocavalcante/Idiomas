@@ -201,12 +201,14 @@
         }
 
         .hero {
-            min-height: 100vh;
+            
             background: var(--gradient-dark);
             position: relative;
             display: flex;
             align-items: center;
             overflow: hidden;
+
+            
 
             &::before {
                 content: '';
@@ -231,27 +233,31 @@
                 background: conic-gradient(from 0deg, transparent, var(--primary-yellow), transparent);
                 border-radius: 50%;
                 opacity: 0.1;
-                animation: rotate 20s linear infinite;
+                animation: rotate 50s linear infinite;
                 transform: translateY(-50%);
+                background-image: url(img/bandeiras-idiomas-1-1024x768.jpg);
             }
 
             .container {
-                max-width: 1400px;
+                width: 900px;
+                max-width: 700px;
                 margin: 0 auto;
                 padding: 0 2rem;
                 position: relative;
                 z-index: 2;
+                margin-left: 49px;
 
                 .hero-content {
-                    max-width: 800px;
+                    
                     margin-top: 6rem;
                     opacity: 0;
                     transform: translateY(50px);
                     animation: fadeInUp 1s ease-out 0.5s forwards;
 
                     .slogan {
+                        
                         font-size: clamp(2.5rem, 5vw, 4.5rem);
-                        font-weight: 900;
+                        font-weight: 700;
                         line-height: 1.1;
                         margin-bottom: 2rem;
                         background: var(--gradient-primary);
@@ -285,7 +291,7 @@
                         flex-wrap: wrap;
                         gap: 1rem;
                         margin-bottom: 4rem;
-
+                        
                         .language-tag {
                             background: rgba(255, 215, 0, 0.1);
                             border: 1px solid var(--primary-yellow);
@@ -300,6 +306,10 @@
                             cursor: pointer;
                             opacity: 0;
                             transform: translateY(20px);
+                            width: 17%;
+                            align-items: center;
+                            display: flex;
+                            justify-content: center;
 
                             &:hover {
                                 background: var(--primary-yellow);
@@ -778,3 +788,64 @@
                 font-size: 2rem;
             }
         }
+
+
+ .benefits {
+    padding: 80px 110px;
+    background-color: #2C2C2C;
+    font-family: var(--font-primary);
+}
+
+.benefits-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-family: var(--font-primary);
+}
+
+.highlight {
+    color: #ffff00;
+}
+
+.invictos-text {
+    color: #ffff00;
+    text-decoration: underline;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+   color: var(--lighter-gray);
+}
+
+.benefit-card {
+    background-color: #ffff00;
+    color: #000;
+    padding: 30px;
+    border-radius: 15px;
+   
+  height: auto;       
+  padding: 16px;     
+  margin: 10px;       
+  font-size: 14px; 
+}
+
+
+
+.benefit-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

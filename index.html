@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invictos Idiomas - Fluência que Transforma</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -43,7 +46,9 @@
                         O tempo todo como se estivesse em outro país
                     </h1>
                     <p class="subtitle">
-                        Transforme sua vida através dos idiomas. Na Invictos Idiomas, você desenvolve fluência real com metodologia imersiva e professores especializados que fazem você pensar no idioma desde o primeiro dia.
+                        Transforme sua vida através dos idiomas. Na Invictos Idiomas, você desenvolve fluência real com
+                        metodologia imersiva e professores especializados que fazem você pensar no idioma desde o
+                        primeiro dia.
                     </p>
                     <div class="languages">
                         <span class="language-tag" data-language="inglês">Inglês</span>
@@ -54,8 +59,50 @@
                     </div>
                 </div>
             </div>
+            
         </section>
 
+        <section class="benefits">
+            <div class="container">
+                <h2 class="benefits-title">
+                    Benefícios<br>
+                    <span class="highlight">DE SER UM</span> <span class="invictos-text">INVICTOS</span> <span
+                        class="highlight">STUDENT</span>
+                </h2>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👥</div>
+                        <h3>Fluência em 18 meses</h3>
+                        <p>O nosso foco é fazer você falar o idioma desde o primeiro dia e se tornar fluente em apenas
+                            18
+                            meses. Nosso método é comprovado e eficaz, garantindo resultados rápidos e duradouros.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⏰</div>
+                        <h3>Horários Flexíveis e Programados</h3>
+                        <p>Oferecemos aulas com horários flexíveis para se adaptar à sua rotina. Você pode escolher os
+                            melhores horários para estudar, garantindo consistência no aprendizado.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📚</div>
+                        <h3>Aulas Práticas</h3>
+                        <p>Nossas aulas são 100% práticas e conversacionais. Você aprenderá através de situações reais
+                            do
+                            dia a dia, desenvolvendo confiança para se comunicar em qualquer situação.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔽</div>
+                        <h3>Realidade Aumentada</h3>
+                        <p>Utilizamos tecnologia de realidade aumentada para tornar o aprendizado mais imersivo e
+                            interativo. Uma experiência única que acelera seu progresso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="action-buttons" id="cursos">
             <div class="container">
                 <h2 class="section-title">Escolha seu <span class="highlight">Caminho</span></h2>
@@ -92,7 +139,8 @@
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD" required>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD"
+                            required>
                         <div class="error-message" id="telefoneError"></div>
                     </div>
                     <button type="submit" class="submit-btn" id="submitBtn">
@@ -111,7 +159,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Invictos Idiomas</h3>
-                    <p>A escola que transforma vidas através dos idiomas. Metodologia imersiva e resultados comprovados.</p>
+                    <p>A escola que transforma vidas através dos idiomas. Metodologia imersiva e resultados comprovados.
+                    </p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook">📘</a>
                         <a href="#" aria-label="Instagram">📷</a>
@@ -176,7 +225,7 @@
             handleScroll() {
                 const header = document.querySelector('.header');
                 const scrollToTop = document.getElementById('scrollToTop');
-                
+
                 if (window.scrollY > 100) {
                     header.classList.add('scrolled');
                     scrollToTop.classList.add('show');
@@ -195,7 +244,7 @@
             handleResize() {
                 const mobileNav = document.getElementById('mobileNav');
                 const mobileMenu = document.getElementById('mobileMenu');
-                
+
                 if (window.innerWidth > 768) {
                     mobileNav.classList.remove('active');
                     mobileMenu.classList.remove('active');
@@ -237,7 +286,7 @@
             animateOnScroll() {
                 const actionButtons = document.querySelectorAll('.action-btn');
                 const rect = document.querySelector('.action-buttons').getBoundingClientRect();
-                
+
                 if (rect.top < window.innerHeight && rect.bottom > 0) {
                     actionButtons.forEach((btn, index) => {
                         setTimeout(() => {
@@ -255,7 +304,7 @@
 
                 form.addEventListener('submit', (e) => {
                     e.preventDefault();
-                    
+
                     if (this.validateForm()) {
                         this.submitForm();
                     }
@@ -273,7 +322,7 @@
                 const nome = document.getElementById('nome');
                 const email = document.getElementById('email');
                 const telefone = document.getElementById('telefone');
-                
+
                 let isValid = true;
 
                 if (!this.validateField(nome)) isValid = false;
@@ -287,7 +336,7 @@
                 const value = field.value.trim();
                 const fieldName = field.name;
                 const errorElement = document.getElementById(`${fieldName}Error`);
-                
+
                 let isValid = true;
                 let errorMessage = '';
 
@@ -373,11 +422,11 @@
                         e.preventDefault();
                         const targetId = link.getAttribute('data-scroll');
                         const targetElement = document.getElementById(targetId);
-                        
+
                         if (targetElement) {
                             const headerHeight = document.querySelector('.header').offsetHeight;
                             const targetPosition = targetElement.offsetTop - headerHeight;
-                            
+
                             window.scrollTo({
                                 top: targetPosition,
                                 behavior: 'smooth'
@@ -418,7 +467,7 @@
             closeMobileMenu() {
                 const mobileMenu = document.getElementById('mobileMenu');
                 const mobileNav = document.getElementById('mobileNav');
-                
+
                 mobileMenu.classList.remove('active');
                 mobileNav.classList.remove('active');
                 document.body.classList.remove('menu-open');
@@ -426,7 +475,7 @@
 
             setupScrollToTop() {
                 const scrollToTop = document.getElementById('scrollToTop');
-                
+
                 scrollToTop.addEventListener('click', () => {
                     window.scrollTo({
                         top: 0,
@@ -437,7 +486,7 @@
 
             animateLanguageTags() {
                 const languageTags = document.querySelectorAll('.language-tag');
-                
+
                 languageTags.forEach((tag, index) => {
                     setTimeout(() => {
                         tag.style.opacity = '1';
@@ -448,7 +497,7 @@
 
             setupActionButtons() {
                 const actionButtons = document.querySelectorAll('.action-btn');
-                
+
                 actionButtons.forEach(button => {
                     button.addEventListener('click', () => {
                         const action = button.getAttribute('data-action');
@@ -533,16 +582,16 @@
             // Máscara para telefone
             setupPhoneMask() {
                 const phoneInput = document.getElementById('telefone');
-                
+
                 phoneInput.addEventListener('input', (e) => {
                     let value = e.target.value.replace(/\D/g, '');
-                    
+
                     if (value.length <= 11) {
                         value = value.replace(/(\d{2})(\d)/, '($1) $2');
                         value = value.replace(/(\d{4})(\d)/, '$1-$2');
                         value = value.replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3');
                     }
-                    
+
                     e.target.value = value;
                 });
             }
@@ -556,19 +605,20 @@
         // Adicionar máscara de telefone
         document.addEventListener('DOMContentLoaded', () => {
             const phoneInput = document.getElementById('telefone');
-            
+
             phoneInput.addEventListener('input', (e) => {
                 let value = e.target.value.replace(/\D/g, '');
-                
+
                 if (value.length <= 11) {
                     value = value.replace(/(\d{2})(\d)/, '($1) $2');
                     value = value.replace(/(\d{4})(\d)/, '$1-$2');
                     value = value.replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3');
                 }
-                
+
                 e.target.value = value;
             });
         });
     </script>
 </body>
+
 </html>
