@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invictos Idiomas - Fluência que Transforma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Invictos Idiomas</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#cursos" data-scroll="cursos">Cursos</a></li>
+                    <li><a href="#escolas" data-scroll="escolas">Escolas</a></li>
+                    <li><a href="#contato" data-scroll="contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#cursos" data-scroll="cursos">Cursos</a>
+            <a href="#escolas" data-scroll="escolas">Escolas</a>
+            <a href="#contato" data-scroll="contato">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="slogan">
+                        <span class="highlight">Você vai se sentir</span>
+                        O tempo todo como se estivesse em outro país
+                    </h1>
+                    <p class="subtitle">
+                        Transforme sua vida através dos idiomas. Na Invictos Idiomas, você desenvolve fluência real com metodologia imersiva e professores especializados que fazem você pensar no idioma desde o primeiro dia.
+                    </p>
+                    <div class="languages">
+                        <span class="language-tag" data-language="inglês">Inglês</span>
+                        <span class="language-tag" data-language="espanhol">Espanhol</span>
+                        <span class="language-tag" data-language="francês">Francês</span>
+                        <span class="language-tag" data-language="italiano">Italiano</span>
+                        <span class="language-tag" data-language="alemão">Alemão</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="action-buttons" id="cursos">
+            <div class="container">
+                <h2 class="section-title">Escolha seu <span class="highlight">Caminho</span></h2>
+                <div class="buttons-grid">
+                    <button class="action-btn" data-action="fluencia">
+                        Quero me tornar fluente em 18 meses
+                    </button>
+                    <button class="action-btn" data-action="pensar">
+                        Quero aprender a pensar no idioma
+                    </button>
+                    <button class="action-btn" data-action="visita">
+                        Quero agendar uma visita
+                    </button>
+                    <button class="action-btn special" data-action="matricula">
+                        Quero me matricular
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contato">
+            <div class="container">
+                <h2 class="form-title">Comece sua <span class="highlight">Jornada</span></h2>
+                <form class="form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        <div class="error-message" id="nomeError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD" required>
+                        <div class="error-message" id="telefoneError"></div>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Quero começar agora
+                    </button>
+                    <div class="success-message" id="successMessage">
+                        🎉 Obrigado! Entraremos em contato em breve para iniciar sua jornada nos idiomas!
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Invictos Idiomas</h3>
+                    <p>A escola que transforma vidas através dos idiomas. Metodologia imersiva e resultados comprovados.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>📍 Rua das Línguas, 123 - Centro</p>
+                    <p>📞 (11) 9999-8888</p>
+                    <p>✉️ contato@invictosidiomas.com.br</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horários</h3>
+                    <p>Segunda a Sexta: 7h às 22h</p>
+                    <p>Sábado: 8h às 18h</p>
+                    <p>Domingo: 9h às 17h</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Idiomas</h3>
+                    <a href="#" data-language="inglês">Inglês</a><br>
+                    <a href="#" data-language="espanhol">Espanhol</a><br>
+                    <a href="#" data-language="francês">Francês</a><br>
+                    <a href="#" data-language="italiano">Italiano</a><br>
+                    <a href="#" data-language="alemão">Alemão</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Invictos Idiomas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <script>
+        class InvictosIdiomas {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.setupScrollAnimations();
+                this.setupFormValidation();
+                this.setupSmoothScroll();
+                this.setupMobileMenu();
+                this.setupScrollToTop();
+                this.animateLanguageTags();
+                this.setupActionButtons();
+            }
+
+            setupEventListeners() {
+                window.addEventListener('scroll', this.handleScroll.bind(this));
+                window.addEventListener('load', this.handlePageLoad.bind(this));
+                window.addEventListener('resize', this.handleResize.bind(this));
+            }
+
+            handleScroll() {
+                const header = document.querySelector('.header');
+                const scrollToTop = document.getElementById('scrollToTop');
+                
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                    scrollToTop.classList.add('show');
+                } else {
+                    header.classList.remove('scrolled');
+                    scrollToTop.classList.remove('show');
+                }
+
+                this.animateOnScroll();
+            }
+
+            handlePageLoad() {
+                this.animateLanguageTags();
+            }
+
+            handleResize() {
+                const mobileNav = document.getElementById('mobileNav');
+                const mobileMenu = document.getElementById('mobileMenu');
+                
+                if (window.innerWidth > 768) {
+                    mobileNav.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            }
+
+            setupScrollAnimations() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, observerOptions);
+
+                // Observar elementos para animação
+                const elementsToAnimate = [
+                    '.section-title',
+                    '.action-btn',
+                    '.form-title',
+                    '.form',
+                    '.footer-section'
+                ];
+
+                elementsToAnimate.forEach(selector => {
+                    document.querySelectorAll(selector).forEach(el => {
+                        observer.observe(el);
+                    });
+                });
+            }
+
+            animateOnScroll() {
+                const actionButtons = document.querySelectorAll('.action-btn');
+                const rect = document.querySelector('.action-buttons').getBoundingClientRect();
+                
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    actionButtons.forEach((btn, index) => {
+                        setTimeout(() => {
+                            btn.style.opacity = '1';
+                            btn.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    });
+                }
+            }
+
+            setupFormValidation() {
+                const form = document.getElementById('contactForm');
+                const submitBtn = document.getElementById('submitBtn');
+                const successMessage = document.getElementById('successMessage');
+
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    if (this.validateForm()) {
+                        this.submitForm();
+                    }
+                });
+
+                // Validação em tempo real
+                const inputs = form.querySelectorAll('input');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', () => this.validateField(input));
+                    input.addEventListener('input', () => this.clearFieldError(input));
+                });
+            }
+
+            validateForm() {
+                const nome = document.getElementById('nome');
+                const email = document.getElementById('email');
+                const telefone = document.getElementById('telefone');
+                
+                let isValid = true;
+
+                if (!this.validateField(nome)) isValid = false;
+                if (!this.validateField(email)) isValid = false;
+                if (!this.validateField(telefone)) isValid = false;
+
+                return isValid;
+            }
+
+            validateField(field) {
+                const value = field.value.trim();
+                const fieldName = field.name;
+                const errorElement = document.getElementById(`${fieldName}Error`);
+                
+                let isValid = true;
+                let errorMessage = '';
+
+                switch (fieldName) {
+                    case 'nome':
+                        if (value.length < 2) {
+                            errorMessage = 'Nome deve ter pelo menos 2 caracteres';
+                            isValid = false;
+                        }
+                        break;
+                    case 'email':
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailRegex.test(value)) {
+                            errorMessage = 'Digite um e-mail válido';
+                            isValid = false;
+                        }
+                        break;
+                    case 'telefone':
+                        const phoneRegex = /^$$\d{2}$$\s\d{4,5}-\d{4}$/;
+                        const cleanPhone = value.replace(/\D/g, '');
+                        if (cleanPhone.length < 10) {
+                            errorMessage = 'Digite um telefone válido';
+                            isValid = false;
+                        }
+                        break;
+                }
+
+                if (isValid) {
+                    field.classList.remove('error');
+                    field.classList.add('success');
+                    errorElement.classList.remove('show');
+                } else {
+                    field.classList.add('error');
+                    field.classList.remove('success');
+                    errorElement.textContent = errorMessage;
+                    errorElement.classList.add('show');
+                }
+
+                return isValid;
+            }
+
+            clearFieldError(field) {
+                const errorElement = document.getElementById(`${field.name}Error`);
+                field.classList.remove('error');
+                errorElement.classList.remove('show');
+            }
+
+            async submitForm() {
+                const submitBtn = document.getElementById('submitBtn');
+                const successMessage = document.getElementById('successMessage');
+                const form = document.getElementById('contactForm');
+
+                // Simular loading
+                submitBtn.disabled = true;
+                submitBtn.classList.add('loading');
+                submitBtn.textContent = '';
+
+                // Simular envio (substituir por integração real)
+                await new Promise(resolve => setTimeout(resolve, 2000));
+
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('loading');
+                submitBtn.textContent = 'Quero começar agora';
+
+                // Mostrar mensagem de sucesso
+                successMessage.classList.add('show');
+                form.reset();
+
+                // Limpar classes de validação
+                form.querySelectorAll('input').forEach(input => {
+                    input.classList.remove('success', 'error');
+                });
+
+                // Esconder mensagem após 5 segundos
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            }
+
+            setupSmoothScroll() {
+                document.querySelectorAll('[data-scroll]').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('data-scroll');
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            const headerHeight = document.querySelector('.header').offsetHeight;
+                            const targetPosition = targetElement.offsetTop - headerHeight;
+                            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+
+                            // Fechar menu mobile se estiver aberto
+                            this.closeMobileMenu();
+                        }
+                    });
+                });
+            }
+
+            setupMobileMenu() {
+                const mobileMenu = document.getElementById('mobileMenu');
+                const mobileNav = document.getElementById('mobileNav');
+
+                mobileMenu.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    mobileNav.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                // Fechar menu ao clicar em link
+                mobileNav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        this.closeMobileMenu();
+                    });
+                });
+
+                // Fechar menu ao clicar fora
+                document.addEventListener('click', (e) => {
+                    if (!mobileMenu.contains(e.target) && !mobileNav.contains(e.target)) {
+                        this.closeMobileMenu();
+                    }
+                });
+            }
+
+            closeMobileMenu() {
+                const mobileMenu = document.getElementById('mobileMenu');
+                const mobileNav = document.getElementById('mobileNav');
+                
+                mobileMenu.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+
+            setupScrollToTop() {
+                const scrollToTop = document.getElementById('scrollToTop');
+                
+                scrollToTop.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            animateLanguageTags() {
+                const languageTags = document.querySelectorAll('.language-tag');
+                
+                languageTags.forEach((tag, index) => {
+                    setTimeout(() => {
+                        tag.style.opacity = '1';
+                        tag.style.transform = 'translateY(0)';
+                    }, 1000 + (index * 150));
+                });
+            }
+
+            setupActionButtons() {
+                const actionButtons = document.querySelectorAll('.action-btn');
+                
+                actionButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const action = button.getAttribute('data-action');
+                        this.handleActionClick(action, button);
+                    });
+                });
+
+                // Setup language tags
+                document.querySelectorAll('[data-language]').forEach(element => {
+                    element.addEventListener('click', () => {
+                        const language = element.getAttribute('data-language');
+                        this.handleLanguageClick(language);
+                    });
+                });
+            }
+
+            handleActionClick(action, button) {
+                // Adicionar efeito visual
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = '';
+                }, 150);
+
+                // Simular ações diferentes
+                switch (action) {
+                    case 'fluencia':
+                        this.showNotification('🎯 Ótima escolha! Vamos criar um plano personalizado para sua fluência em 18 meses.');
+                        break;
+                    case 'pensar':
+                        this.showNotification('🧠 Perfeito! Nossa metodologia imersiva vai fazer você pensar no idioma naturalmente.');
+                        break;
+                    case 'visita':
+                        this.showNotification('🏫 Que legal! Vamos agendar sua visita para conhecer nossa escola.');
+                        break;
+                    case 'matricula':
+                        this.showNotification('🎉 Excelente! Vamos iniciar sua matrícula agora mesmo.');
+                        // Scroll para o formulário
+                        document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+                        break;
+                }
+            }
+
+            handleLanguageClick(language) {
+                this.showNotification(`🌍 ${language.charAt(0).toUpperCase() + language.slice(1)} é uma excelente escolha! Temos professores nativos especializados.`);
+            }
+
+            showNotification(message) {
+                // Criar elemento de notificação
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 100px;
+                    right: 20px;
+                    background: var(--gradient-primary);
+                    color: var(--black);
+                    padding: 1rem 1.5rem;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    z-index: 10000;
+                    transform: translateX(100%);
+                    transition: var(--transition-smooth);
+                    max-width: 300px;
+                    box-shadow: var(--shadow-card);
+                `;
+                notification.textContent = message;
+                document.body.appendChild(notification);
+
+                // Animar entrada
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(0)';
+                }, 100);
+
+                // Remover após 4 segundos
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 400);
+                }, 4000);
+            }
+
+            // Máscara para telefone
+            setupPhoneMask() {
+                const phoneInput = document.getElementById('telefone');
+                
+                phoneInput.addEventListener('input', (e) => {
+                    let value = e.target.value.replace(/\D/g, '');
+                    
+                    if (value.length <= 11) {
+                        value = value.replace(/(\d{2})(\d)/, '($1) $2');
+                        value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                        value = value.replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3');
+                    }
+                    
+                    e.target.value = value;
+                });
+            }
+        }
+
+        // Inicializar aplicação quando DOM estiver carregado
+        document.addEventListener('DOMContentLoaded', () => {
+            new InvictosIdiomas();
+        });
+
+        // Adicionar máscara de telefone
+        document.addEventListener('DOMContentLoaded', () => {
+            const phoneInput = document.getElementById('telefone');
+            
+            phoneInput.addEventListener('input', (e) => {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.length <= 11) {
+                    value = value.replace(/(\d{2})(\d)/, '($1) $2');
+                    value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                    value = value.replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3');
+                }
+                
+                e.target.value = value;
+            });
+        });
+    </script>
+</body>
+</html>
