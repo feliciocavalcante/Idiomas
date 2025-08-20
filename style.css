@@ -885,6 +885,8 @@
             transition: transform 0.3s ease, background-color 0.3s ease;
             backdrop-filter: blur(3px);
             border: 1px solid rgba(255, 215, 0, 0.3);
+            cursor: pointer;
+
         }
 
         .language-item:hover {
@@ -906,3 +908,670 @@
             color: var(--light-grey);
         }
 
+
+        /* ========================================
+   MOBILE RESPONSIVITY IMPROVEMENTS
+   Invictos Idiomas - Complete Mobile Optimization
+   ======================================== */
+
+/* Base responsive adjustments */
+:root {
+    --container-padding-mobile: 1rem;
+    --container-padding-tablet: 1.5rem;
+    --section-padding-mobile: 3rem 0;
+    --section-padding-tablet: 4rem 0;
+}
+
+/* ===== HEADER MOBILE IMPROVEMENTS ===== */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.8rem 0;
+    }
+
+    .header .container {
+        padding: 0 var(--container-padding-mobile);
+        position: relative;
+    }
+
+    .header .container img {
+        max-height: 40px;
+        width: auto;
+    }
+
+    .header .container .nav {
+        display: none;
+    }
+
+    .header .container .mobile-menu {
+        display: flex;
+        padding: 8px;
+        border-radius: 6px;
+        background: rgba(255, 215, 0, 0.1);
+        border: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .mobile-nav {
+        padding-top: 80px;
+    }
+
+    .mobile-nav a {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* ===== HERO SECTION MOBILE ===== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 8rem 0 6rem;
+        min-height: auto;
+    }
+
+    .hero .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 var(--container-padding-mobile);
+    }
+
+    .hero .container .hero-content {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .hero .container .hero-content .slogan {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .container .hero-content .slogan .highlight {
+        font-size: 0.7em;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero .container .hero-content .subtitle {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .hero .container .hero-content .languages {
+        justify-content: center;
+        gap: 0.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero .container .hero-content .languages .language-tag {
+        width: auto;
+        min-width: 90px;
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+/* ===== BENEFITS SECTION MOBILE ===== */
+@media (max-width: 768px) {
+    .benefits {
+        padding: var(--section-padding-mobile);
+        padding-left: var(--container-padding-mobile);
+        padding-right: var(--container-padding-mobile);
+    }
+
+    .benefits-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        line-height: 1.3;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .benefit-card {
+        padding: 1.5rem;
+        margin: 0;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .benefit-icon {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ===== ACTION BUTTONS MOBILE ===== */
+@media (max-width: 768px) {
+    .action-buttons {
+        padding: var(--section-padding-mobile);
+    }
+
+    .action-buttons .container {
+        padding: 0 var(--container-padding-mobile);
+    }
+
+    .action-buttons .container .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.3;
+    }
+
+    .action-buttons .container .buttons-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        max-width: 100%;
+    }
+
+    .action-buttons .container .buttons-grid .action-btn {
+        padding: 1.5rem;
+        font-size: 1rem;
+        border-radius: 12px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* ===== LANGUAGES SECTION MOBILE ===== */
+@media (max-width: 768px) {
+    .languages-section {
+        padding: var(--section-padding-mobile);
+        padding-left: var(--container-padding-mobile);
+        padding-right: var(--container-padding-mobile);
+    }
+
+    .languages-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        line-height: 1.2;
+    }
+
+    .language-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 100%;
+    }
+
+    .language-item {
+        padding: 1.8rem 1.5rem;
+        border-radius: 12px;
+    }
+
+    .language-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .language-item p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* ===== CONTACT FORM MOBILE ===== */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: var(--section-padding-mobile);
+    }
+
+    .contact-form .container {
+        max-width: 100%;
+        padding: 0 var(--container-padding-mobile);
+    }
+
+    .contact-form .container .form-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.3;
+    }
+
+    .contact-form .container .form {
+        padding: 2rem 1.5rem;
+        border-radius: 15px;
+    }
+
+    .contact-form .container .form .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-form .container .form .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .contact-form .container .form .form-group input {
+        padding: 1rem 0.8rem;
+        font-size: 16px; /* Prevents zoom on iOS */
+        border-radius: 8px;
+    }
+
+    .contact-form .container .form .submit-btn {
+        padding: 1.2rem;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+}
+
+/* ===== FOOTER MOBILE ===== */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 2rem;
+    }
+
+    .footer .container {
+        padding: 0 var(--container-padding-mobile);
+    }
+
+    .footer .container .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer .container .footer-content .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer .container .footer-content .footer-section p,
+    .footer .container .footer-content .footer-section a {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .footer .container .footer-content .footer-section .social-links {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .footer .container .footer-bottom {
+        padding-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== SMALL MOBILE (320px - 480px) ===== */
+@media (max-width: 480px) {
+    :root {
+        --container-padding-mobile: 0.8rem;
+    }
+
+    /* Header adjustments */
+    .header .container img {
+        max-height: 35px;
+    }
+
+    .header .container .mobile-menu span {
+        width: 22px;
+        height: 2.5px;
+    }
+
+    /* Hero adjustments */
+    .hero {
+        padding: 7rem 0 4rem;
+    }
+
+    .hero .container .hero-content .slogan {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .hero .container .hero-content .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .container .hero-content .languages .language-tag {
+        min-width: 80px;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    /* Benefits adjustments */
+    .benefits {
+        padding: 2.5rem 0.8rem;
+    }
+
+    .benefits-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .benefit-card {
+        padding: 1.2rem;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Action buttons adjustments */
+    .action-buttons .container .section-title {
+        font-size: 1.8rem;
+    }
+
+    .action-buttons .container .buttons-grid .action-btn {
+        padding: 1.2rem;
+        font-size: 0.95rem;
+        min-height: 70px;
+    }
+
+    /* Languages section adjustments */
+    .languages-section h2 {
+        font-size: 2rem;
+    }
+
+    .language-item {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .language-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .language-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact form adjustments */
+    .contact-form .container .form-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-form .container .form {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-form .container .form .form-group input {
+        padding: 0.9rem 0.7rem;
+    }
+
+    /* Footer adjustments */
+    .footer .container .footer-content .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer .container .footer-content .footer-section p,
+    .footer .container .footer-content .footer-section a {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== EXTRA SMALL MOBILE (max 375px) ===== */
+@media (max-width: 375px) {
+    .hero .container .hero-content .slogan {
+        font-size: 1.6rem;
+    }
+
+    .hero .container .hero-content .languages {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .hero .container .hero-content .languages .language-tag {
+        width: 100%;
+        max-width: 200px;
+        padding: 0.8rem;
+    }
+
+    .benefits-title {
+        font-size: 1.6rem;
+    }
+
+    .action-buttons .container .section-title {
+        font-size: 1.6rem;
+    }
+
+    .languages-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form .container .form-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* ===== LANDSCAPE ORIENTATION (Mobile) ===== */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 6rem 0 3rem;
+        min-height: auto;
+    }
+
+    .hero .container .hero-content {
+        margin-top: 1rem;
+    }
+
+    .hero .container .hero-content .slogan {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .container .hero-content .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .container .hero-content .languages {
+        margin-bottom: 2rem;
+    }
+
+    .benefits {
+        padding: 3rem var(--container-padding-mobile);
+    }
+
+    .action-buttons,
+    .contact-form {
+        padding: 3rem 0;
+    }
+}
+
+/* ===== TABLET IMPROVEMENTS (481px - 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero .container .hero-content .slogan {
+        font-size: 2.5rem;
+    }
+
+    .hero .container .hero-content .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .language-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .action-buttons .container .buttons-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* ===== LARGE TABLET (769px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header .container {
+        padding: 0 var(--container-padding-tablet);
+    }
+
+    .hero .container,
+    .benefits .container,
+    .action-buttons .container,
+    .contact-form .container,
+    .footer .container {
+        padding-left: var(--container-padding-tablet);
+        padding-right: var(--container-padding-tablet);
+    }
+
+    .benefits {
+        padding: var(--section-padding-tablet);
+        padding-left: var(--container-padding-tablet);
+        padding-right: var(--container-padding-tablet);
+    }
+
+    .languages-section {
+        padding: var(--section-padding-tablet);
+        padding-left: var(--container-padding-tablet);
+        padding-right: var(--container-padding-tablet);
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .language-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .action-buttons .container .buttons-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* ===== TOUCH IMPROVEMENTS ===== */
+@media (hover: none) and (pointer: coarse) {
+    /* Better touch targets */
+    .action-btn,
+    .submit-btn,
+    .language-tag,
+    .mobile-menu {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Remove hover effects on touch devices */
+    .action-btn:hover,
+    .language-tag:hover,
+    .language-item:hover {
+        transform: none;
+    }
+
+    /* Add active states for touch feedback */
+    .action-btn:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+
+    .language-tag:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== SAFE AREA ADJUSTMENTS (iPhone X+) ===== */
+@supports (padding: max(0px)) {
+    .header {
+        padding-top: max(1rem, env(safe-area-inset-top));
+    }
+
+    .hero {
+        padding-top: max(8rem, calc(6rem + env(safe-area-inset-top)));
+    }
+
+    .footer {
+        padding-bottom: max(2rem, env(safe-area-inset-bottom));
+    }
+
+    .scroll-to-top {
+        bottom: max(2rem, calc(2rem + env(safe-area-inset-bottom)));
+        right: max(2rem, calc(2rem + env(safe-area-inset-right)));
+    }
+}
+
+/* ===== HIGH DPI DISPLAYS ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header .container img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+@media (max-width: 768px) {
+    /* Optimize animations for mobile */
+    .hero::after {
+        display: none; /* Remove heavy rotating element on mobile */
+    }
+
+    /* Simplify gradients for better performance */
+    .hero::before {
+        background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+    }
+
+    /* Reduce box shadows complexity */
+    .benefit-card,
+    .language-item,
+    .contact-form .container .form {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* ===== DARK MODE SAFE COLORS ===== */
+@media (prefers-color-scheme: dark) {
+    .contact-form .container .form .form-group input {
+        color-scheme: dark;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .header,
+    .mobile-menu,
+    .mobile-nav,
+    .scroll-to-top,
+    .action-buttons {
+        display: none !important;
+    }
+
+    .hero,
+    .benefits,
+    .languages-section,
+    .contact-form,
+    .footer {
+        page-break-inside: avoid;
+        background: white !important;
+        color: black !important;
+    }
+}
